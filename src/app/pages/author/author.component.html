@@ -1,0 +1,11 @@
+<div class="container mt-3">
+  <h2>Add new author</h2>
+  <form [formGroup]="authorFormGroup">
+    <div class="input-group mb-3">
+      <span class="input-group-text">Author</span>
+      <input formControlName="name" type="text" class="form-control" placeholder="First Name">
+      <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name">
+      <button (click)="submitAuthorForm()" type="button" class="btn btn-primary">Add</button>
+    </div>
+  </form>
+</div>
