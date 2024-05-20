@@ -3,11 +3,11 @@ export class Author {
 
   name!: string;
 
-  imageUrl!: string;
+  imageUrl: string = '';
 
-  totalPosts!: number;
+  totalPosts: number = 0;
 
-  totalComments!: number;
+  totalComments: number = 0;
 
   constructor(props?: Partial<Author>) {
     Object.assign(this, props);

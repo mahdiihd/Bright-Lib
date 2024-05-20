@@ -1,11 +1,25 @@
 <div class="container mt-3">
   <h2>Add new author</h2>
   <form [formGroup]="authorFormGroup">
-    <div class="input-group mb-3">
-      <span class="input-group-text">Author</span>
-      <input formControlName="name" type="text" class="form-control" placeholder="First Name">
-      <input formControlName="lastName" type="text" class="form-control" placeholder="Last Name">
+    <div class="form-row d-flex flex-row">
+      <input formControlName="name" type="text" class="form-control me-1" placeholder="First Name">
+      <input formControlName="lastName" type="text" class="form-control me-1" placeholder="Last Name">
       <button (click)="submitAuthorForm()" type="button" class="btn btn-primary">Add</button>
     </div>
   </form>
+  <form [formGroup]="searchFormGroup">
+    <input formControlName="searchInput" (change)="search()" class="form-control mt-3" type="text"
+           placeholder="search">
+  </form>
+  <table class="table table-bordered mt-1">
+    <tbody>
+    <tr>
+      <th *ngFor="let field of authorList[0] | keyvalue">{{ field.key }}</th>
+    </tr>
+    <tr *ngFor="let item of displayData">
+      <td *ngFor="let field of item | keyvalue">{{ field.value }}</td>
+    </tr>
+    </tbody>
+  </table>
+  <button (click)="loadMore(3)" type="button" class="btn btn-primary">Load more</button>
 </div>
