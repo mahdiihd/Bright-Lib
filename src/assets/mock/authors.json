@@ -1,0 +1,61 @@
+{
+  "total": 8,
+  "results": [
+    {
+      "id": 1,
+      "name": "author1",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 2,
+      "name": "author2",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 3,
+      "name": "author3",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 4,
+      "name": "author4",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 5,
+      "name": "author5",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 6,
+      "name": "author6",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 7,
+      "name": "author7",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    },
+    {
+      "id": 8,
+      "name": "author8",
+      "imageUrl": "",
+      "totalPosts": 5,
+      "totalComments": 15
+    }
+  ]
+}
